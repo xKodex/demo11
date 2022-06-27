@@ -17,7 +17,6 @@ public class User2 {
     @Column(length = 45, nullable = false, name = "last_name")
     private String lastName;
 
-
     public Integer getId() {
         return id;
     }
