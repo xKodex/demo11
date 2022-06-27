@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@AHMEDPC" uuid="fc7fcb20-a1a7-402a-8c8d-a85fb1ab2dee">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://AHMEDPC\SQLEXPRESS2019</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="encrypt" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="jpa@AHMEDPC" uuid="46ffd32b-d8e0-484b-8483-891329b15330">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://AHMEDPC\SQLEXPRESS2019;database=jpa</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="encrypt" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="jpa@AHMEDPC [2]" uuid="4fbb7ebb-7dbd-427b-9fcd-ac3cfd6b8e65">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://AHMEDPC\SQLEXPRESS2019;database=jpa</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="encrypt" value="false" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
