@@ -3,8 +3,8 @@ package com.example.demo11.user;
 import javax.persistence.*;
 
 @Entity
-@Table(name="user2")
-public class User2 {
+@Table(name="user")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
