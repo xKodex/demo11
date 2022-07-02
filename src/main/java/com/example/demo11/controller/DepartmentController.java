@@ -19,6 +19,8 @@ public class DepartmentController {
 
     //@Valid
     // Save operation
+    //@RequestMapping(method = RequestMethod.POST)
+
     @PostMapping("/departments")
     public Department saveDepartment(
              @RequestBody Department department)

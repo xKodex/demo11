@@ -9,15 +9,15 @@ package com.example.demo11.service;
         import java.util.List;
         import java.util.Objects;
 
-import com.example.demo11.entity.Department;
-import com.example.demo11.repository.DepartmentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+        import com.example.demo11.entity.Department;
+        import com.example.demo11.repository.DepartmentRepository;
+        import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.stereotype.Service;
+
+        import javax.transaction.Transactional;
 
 // Annotation
 @Service
-
-// Class
 public class DepartmentServiceImpl
         implements DepartmentService {
 
@@ -25,21 +25,21 @@ public class DepartmentServiceImpl
     private DepartmentRepository departmentRepository;
 
     // Save operation
-    @Override
+    @Transactional
     public Department saveDepartment(Department department)
     {
         return departmentRepository.save(department);
     }
 
     // Read operation
-    @Override public List<Department> fetchDepartmentList()
+    @Transactional public List<Department> fetchDepartmentList()
     {
         return (List<Department>)
                 departmentRepository.findAll();
     }
 
     // Update operation
-    @Override
+    @Transactional
     public Department
     updateDepartment(Department department,
                      Long departmentId)
@@ -74,7 +74,7 @@ public class DepartmentServiceImpl
     }
 
     // Delete operation
-    @Override
+    @Transactional
     public void deleteDepartmentById(Long departmentId)
     {
         departmentRepository.deleteById(departmentId);

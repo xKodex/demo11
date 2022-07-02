@@ -4,11 +4,17 @@ package com.example.demo11.repository;
 //import com.amiya.springbootdemoproject.entity.Department;
 import com.example.demo11.entity.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+
+import java.io.Serializable;
 
 // Annotation
-@Repository
+//@Repository
 // Interface
-public interface DepartmentRepository
+/*public interface DepartmentRepository
         extends JpaRepository<Department, Long> {
+}*/
+
+
+public interface DepartmentRepository extends JpaRepository<Department, Serializable> {
+
 }
