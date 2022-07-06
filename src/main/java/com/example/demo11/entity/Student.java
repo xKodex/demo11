@@ -2,10 +2,12 @@ package com.example.demo11.entity;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
 public class Student {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

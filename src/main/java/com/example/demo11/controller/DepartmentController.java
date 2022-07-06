@@ -32,6 +32,7 @@ public class DepartmentController {
     @GetMapping("/departments")
     public List<Department> fetchDepartmentList()
     {
+        List<Department> dept= departmentService.fetchDepartmentList();
         return departmentService.fetchDepartmentList();
     }
 

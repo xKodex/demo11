@@ -5,6 +5,9 @@ import com.example.demo11.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/student")
 public class StudentController {
@@ -35,4 +38,10 @@ public class StudentController {
         studentService.delete(student);
         return "Record deleted succesfully";
     }
+
+    @RequestMapping("/allStudents")
+    public Map<String,String> getAllStudents(@RequestParam String organizationCode, @RequestParam String stId) {
+        return studentService.getAllStudents(organizationCode, stId);
+    }
+
 }

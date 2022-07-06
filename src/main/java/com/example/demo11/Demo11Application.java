@@ -10,8 +10,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 @SpringBootApplication
-@ComponentScan({"com.example.demo11.entity"})
-@EntityScan("com.example.demo11.entity")
+@ComponentScan({"com.example.demo11.*"})
+@EntityScan("com.example.demo11.*")
 @EnableJpaRepositories("com.example.demo11.repository")
 public class Demo11Application extends SpringBootServletInitializer {
 
